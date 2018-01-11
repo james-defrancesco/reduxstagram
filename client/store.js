@@ -16,10 +16,10 @@ const defaultState = {
   comments
 };
 
-//shortcut to the usual last line export default xyz
-export default const store = createStore(rootReducer, defaultState);
+
+const store = createStore(rootReducer, defaultState);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
-// this is the same as above ^ shortcut
-// export default store;
+
+export default store;
