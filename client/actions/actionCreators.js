@@ -4,6 +4,7 @@
 
 // increment
 export function increment(index) {
+  
   //return an object because actions are just objects because they have two things
   return {
     type: 'INCREMENT_LIKES',
